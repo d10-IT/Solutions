@@ -157,40 +157,6 @@
   </div>
 </section>
 
-<!-- calendly booking -->
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/d10itsolutions-appointments/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
-
-<!-- removed from page
-<section id="booking" class="bg-gray-100 py-20">
-  <div class="max-w-6x1 mx-auto px-6 text-center">
-    <h2 class="text-2x1 md:text-3x1 font-bold text-d10blue mb-4">
-      Book Your Free IT Consultation
-    </h2>
-
-    <p class="mb-8 text-gray-600">
-      Choose a time that suits you. No obligation. Secure & confidential
-    </p>
-
-    <div class="calendly-inline-widget rounded-x1 overflow-hidden shadow-lg"
-    data-url="https://calendly.com/app/scheduling/meeting_types/user/me"
-    style="min-width:320px;height:700px">
-  </div>
-</div>
-</section>
-
-<a href="#"
-  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/app/scheduling/meeting_types/user/me'}); return false;"
-class="bg-d10gold text-black font=bold px-6 py-3 rounded-lg">
-</a>
-
-
-<a href="#booking" class="hover:text-d10gold bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-bold">Book</a>
---> 
-<!-- end of calendly -->
-
 <!-- CONTACT FORM -->
 <section id="contact" class="py-20">
   <div class="max-w-4xl mx-auto px-6">
@@ -235,7 +201,17 @@ class="bg-d10gold text-black font=bold px-6 py-3 rounded-lg">
 </footer>
 
 <!-- FLOATING WHATSAPP CTA -->
-<a href="https://wa.me/27746100441" class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-bold">WhatsApp</a>
+<a href="https://wa.me/27746100441" class="fixed bottom-6 left-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-bold">WhatsApp</a>
+
+<!-- calendly booking -->
+
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d10itsolutions-appointments', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: false }); }</script>
+<!-- Calendly badge widget end -->
+
 
 </body>
 </html>
