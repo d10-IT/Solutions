@@ -18,8 +18,35 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- calendly embeded calendar -->
-<script src="https//assets.calendly.com/assets.external/widgets.js"async></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            dark: '#0f1a14',
+            light: '#f4f6f4',
+            accent: '#6fa37c',
+            soft: '#9fc6aa',
+          },
+        },
+        fontFamily: {
+          serif: ['Playfair Display', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- calendly assets -->
+  <!-- calendly styles -->
+    <link href="https://assets.calendly,com/assets/external/widgets.css" rel="stylesheet">
+
+  <!-- calendly script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   <!-- Tailwind Brand Config -->
   <script>
@@ -130,6 +157,29 @@
   </div>
 </section>
 
+<!-- calendly booking -->
+<section id="booking" class="bg-gray-100 py-20">
+  <div class="max-w-6x1 mx-auto px-6 text-center">
+    <h2 class="text-2x1 md:text-3x1 font-bold text-d10blue mb-4">
+      Book Your Free IT Consultation
+    </h2>
+
+    <p class="mb-8 text-gray-600">
+      Choose a time that suits you. No obligation. Secure & confidential
+    </p>
+
+    <div class="calendly-inline-widget rounded-x1 overflow-hidden shadow-lg"
+    data-url="https://calendly.com/dq0itsolutions-appointments"
+    style="min-width:320px;height:700px">
+  </div>
+</div>
+</section>
+
+<a href="#"
+  onclick="Calendly.initPopupWidget({url: 'https://calendlyd10itsolutions-appointments'}); return false;"
+class="bg-d10gold text-black font=bold px-6 py-3 rounded-lg">
+</a>
+
 <!-- CONTACT FORM -->
 <section id="contact" class="py-20">
   <div class="max-w-4xl mx-auto px-6">
@@ -175,13 +225,6 @@
 
 <!-- FLOATING WHATSAPP CTA -->
 <a href="https://wa.me/27746100441" class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-bold">WhatsApp</a>
-
-<button onclick="Calendly.initPopupWidget ({
-  url: 'https://calendly.com/d10itsolutions-appointments'
-}); return false;" 
-class="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition">
-Book a Call
-</button>
 
 </body>
 </html>
