@@ -15,10 +15,33 @@
   <meta property="og:description" content="Secure, Reliable IT Support & Leadership Enablement" />
   <meta property="og:type" content="website" />
 
-  <!-- Tailwind CDN -->
+ <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            dark: '#0f1a14',
+            light: '#f4f6f4',
+            accent: '#6fa37c',
+            soft: '#9fc6aa',
+          },
+        },
+        fontFamily: {
+          serif: ['Playfair Display', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+
+
+  <!-- Tailwind Brand Config -->
+   <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -36,7 +59,20 @@
     }
   </script>
 
+
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-520691095');
+  </script>
+
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
