@@ -1,63 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FDRKDMXT3K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDRKDMXT3K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FDRKDMXT3K');
+  </script>
 
-  gtag('config', 'G-FDRKDMXT3K');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO -->
-  <title>D10 IT Solutions | Secure, Reliable IT Support in Cape Town</title>
-  <meta name="description" content="Professional IT support for home users, remote professionals, and small businesses in Cape Town. Secure, reliable, security-first IT services." />
-  <meta name="keywords" content="IT support Cape Town, home office IT, remote IT support, family online safety, business IT solutions" />
-  <meta name="author" content="D10 IT Solutions" />
+  <title>D10 IT Solutions | Secure, Reliable IT Support</title>
+  <meta name="description" content="Professional IT support for homes and businesses in Cape Town. Secure, reliable, security-first IT services." />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="D10 IT Solutions" />
-  <meta property="og:description" content="Secure, Reliable IT Support for Home & Business" />
-  <meta property="og:type" content="website" />
-
-  <!-- Tailwind CDN -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          brand: {
-            dark: '#0f1a14',
-            light: '#f4f6f4',
-            accent: '#6fa37c',
-            soft: '#9fc6aa',
-          },
-        },
-        fontFamily: {
-          serif: ['Playfair Display', 'serif'],
-          sans: ['Inter', 'sans-serif'],
-        },
-      },
-    },
-  }
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- calendly assets -->
-  <!-- calendly styles -->
-    <link href="https://assets.calendly,com/assets/external/widgets.css" rel="stylesheet">
-
-  <!-- calendly script -->
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-  <!-- Tailwind Brand Config -->
   <script>
     tailwind.config = {
       theme: {
@@ -66,31 +27,36 @@
             d10black: '#000000',
             d10gold: '#C9A227',
             d10blue: '#0A2540'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
           }
         }
       }
     }
   </script>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
 <!-- HEADER -->
-<header class="bg-d10black text-white">
-  <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+<header class="bg-d10black text-white sticky top-0 z-50 border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between">
     <div class="flex items-center gap-4">
-      <img src="images\logo\d10ITSolutionslogo.png" alt="D10 IT Solutions Logo" class="h-14" />
+      <img src="images/logo/d10ITSolutionslogo.png" alt="D10 IT Solutions Logo" class="h-12" />
       <div>
-        <h1 class="text-xl font-bold">D10 IT Solutions</h1>
-        <p class="text-sm text-d10gold">Secure • Reliable • Modern</p>
+        <h1 class="text-lg font-bold">D10 IT Solutions</h1>
+        <p class="text-xs text-d10gold">Secure • Reliable • Modern</p>
       </div>
     </div>
 
-    <nav class="sticky top-0 z-50 bg-black border-b border-gray-800 flex gap-6 mt-4 md:mt-0 font-semibold">
-      <a href="#" class="hover:text-d10gold">Home</a>
+    <nav class="flex gap-6 mt-4 md:mt-0 font-semibold">
       <a href="#services" class="hover:text-d10gold">Services</a>
       <a href="#packages" class="hover:text-d10gold">Packages</a>
+      <a href="VineForce_Teams.html" class="hover:text-d10gold">VineForce</a>
       <a href="#contact" class="hover:text-d10gold">Contact</a>
     </nav>
   </div>
@@ -99,14 +65,61 @@
 <!-- HERO -->
 <section class="bg-white">
   <div class="max-w-5xl mx-auto px-6 py-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-d10blue">Secure, Reliable IT Support</h2>
-    <p class="mt-4 text-lg">Professional IT support for home users, remote professionals, and small to growing businesses.</p>
-    <p class="mt-2 text-sm text-gray-600">Based in Cape Town • Remote support nationwide</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-d10blue">
+      IT That Works — Without Stress
+    </h2>
 
-    <div class="mt-8 flex justify-center gap-4">
-      <a href="#contact" class="bg-d10gold text-black font-bold px-6 py-3 rounded-lg">Free IT Health Check</a>
-      <!--<a href="https://wa.me/27746100441" class="bg-green-500 text-white font-bold px-6 py-3 rounded-lg">WhatsApp Us</a>-->
-      <a href="VineForce_Teams.html" class="bg-d10blue text-white font-bold px-6 py-3 rounded-lg">VineForce Teams</a>
+    <p class="mt-5 text-lg max-w-3xl mx-auto">
+      We help homes and businesses stay secure, productive, and supported —
+      without complexity, jargon, or constant firefighting.
+    </p>
+
+    <p class="mt-3 text-sm text-gray-600">
+      Based in Cape Town • Supporting clients nationwide
+    </p>
+
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#contact"
+         class="bg-d10gold text-black font-bold px-8 py-4 rounded-lg hover:scale-105 transition">
+        Book a Free Consultation
+      </a>
+
+      <a href="VineForce_Teams.html"
+         class="border border-d10blue text-d10blue font-semibold px-8 py-4 rounded-lg hover:bg-d10blue hover:text-white transition">
+        Explore VineForce
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE DISCOVERY -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-2xl font-bold mb-12 text-d10blue">
+      Why Most IT Problems Keep Coming Back
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition">
+        <h3 class="font-bold mb-2">Reactive Fixes</h3>
+        <p class="text-sm">
+          Problems get patched, not solved — leading to repeat failures.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition">
+        <h3 class="font-bold mb-2">No Visibility</h3>
+        <p class="text-sm">
+          Issues build quietly until they disrupt work.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition">
+        <h3 class="font-bold mb-2">Poor Alignment</h3>
+        <p class="text-sm">
+          Technology isn’t aligned to how people actually work.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -114,52 +127,28 @@
 <!-- SERVICES -->
 <section id="services" class="py-20">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-2xl font-bold text-center mb-12">Our IT Services</h2>
+    <h2 class="text-2xl font-bold text-center mb-12">Our Services</h2>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="font-bold text-lg">Home Office IT Health Check – What We Cover</h3>
-        <ul class="mt-4 space-y-2">
-<li>Comprehensive system performance optimisation</li>
-<li>Full device tune-up and stability improvements</li>
-<li>Wi-Fi performance and coverage optimisation</li>
-<li>Security posture review and risk assessment</li>
-<li>Backup integrity and recovery verification</li>
-<li>Malware detection, removal, and prevention</li>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-lg mb-3">Home Office IT Health Check</h3>
+        <ul class="space-y-2 text-sm">
+          <li>• Performance optimisation</li>
+          <li>• Security posture review</li>
+          <li>• Backup & recovery validation</li>
+          <li>• Wi-Fi stability & coverage</li>
         </ul>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="font-bold text-lg">Business Support</h3>
-        <ul class="mt-4 space-y-2">
-          <li>Secure Network & Connectivity</li>
-          <li>Endpoint & Device Management</li>
-          <li>Productivity Platforms</li>
-          <li>Monitoring, Support & IT Service Management</li>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-lg mb-3">Business IT Support</h3>
+        <ul class="space-y-2 text-sm">
+          <li>• Secure networking</li>
+          <li>• Endpoint management</li>
+          <li>• ITIL-aligned support</li>
+          <li>• Monitoring & optimisation</li>
         </ul>
       </div>
-
-
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="font-bold text-lg">Remote & Onsite Support</h3>
-        <ul class="mt-4 space-y-2">
-          <li>Hardware & software issues</li>
-          <li>Slow PCs & crashes</li>
-          <li>Printer support</li>
-          <li>Network security</li>
-        </ul>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3 class="font-bold text-lg">Other Services we offer</h3>
-        <ul class="mt-4 space-y-2">
-          <li>Cyber Awareness</li>
-          <li>d10 Future Kids Curriculum</li>
-          <li>IT Consulting</li>
-          <li></li>
-        </ul>
-      </div>
-
     </div>
   </div>
 </section>
@@ -167,74 +156,66 @@
 <!-- PACKAGES -->
 <section id="packages" class="bg-white py-20">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-2xl font-bold text-center mb-12">Packages at a Glance</h2>
+    <h2 class="text-2xl font-bold text-center mb-12">Packages</h2>
 
     <div class="grid md:grid-cols-4 gap-6">
-      <div class="p-6 border rounded-lg text-center">Basic Health Check</div>
-      <div class="p-6 border rounded-lg text-center">Family Safety Package</div>
-      <div class="p-6 border rounded-lg text-center">Full Home Setup</div>
-      <div class="p-6 border rounded-lg text-center">Custom IT Solutions</div>
-    </div>
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+        <h3 class="font-bold mb-2">Health Check</h3>
+        <p class="text-sm mb-4">Fast clarity on your IT setup</p>
+        <a href="#contact" class="text-d10gold font-semibold">Get Started →</a>
+      </div>
 
-    <p class="mt-8 text-center font-semibold">Transparent pricing • No hidden fees • First‑month discount</p>
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+        <h3 class="font-bold mb-2">Family Safety</h3>
+        <p class="text-sm mb-4">Secure digital homes</p>
+        <a href="#contact" class="text-d10gold font-semibold">Learn More →</a>
+      </div>
+
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+        <h3 class="font-bold mb-2">Full Setup</h3>
+        <p class="text-sm mb-4">Work-ready environments</p>
+        <a href="#contact" class="text-d10gold font-semibold">View Details →</a>
+      </div>
+
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+        <h3 class="font-bold mb-2">Custom Solutions</h3>
+        <p class="text-sm mb-4">Designed around your needs</p>
+        <a href="#contact" class="text-d10gold font-semibold">Talk to Us →</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT FORM -->
-<section id="contact" class="py-20">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-2xl font-bold text-center mb-8">Contact D10 IT Solutions</h2>
+<!-- CONTACT CTA -->
+<section id="contact" class="py-20 bg-d10black text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-2xl font-bold text-d10gold mb-4">
+      Let’s Make IT Simple Again
+    </h2>
 
-    <form class="bg-white p-8 rounded-xl shadow space-y-4" action="mailto:kyle.n.wessels@gmail.com" method="post" enctype="text/plain">
-      <input class="w-full border p-3 rounded" type="text" name="name" placeholder="Full Name" required />
-      <input class="w-full border p-3 rounded" type="email" name="email" placeholder="Email Address" required />
-      <input class="w-full border p-3 rounded" type="tel" name="phone" placeholder="Phone Number" />
+    <p class="mb-8">
+      Book a free consultation and get clarity without pressure.
+    </p>
 
-      <textarea class="w-full border p-3 rounded" name="message" rows="4" placeholder="Describe your IT needs..."></textarea>
-
-      <button class="w-full bg-d10black text-white font-bold py-3 rounded">Get Free Quote</button>
-    </form>
+    <a href="mailto:kyle.n.wessels@gmail.com"
+       class="inline-block bg-d10gold text-black font-bold px-8 py-4 rounded-lg hover:scale-105 transition">
+      Get in Touch
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-d10black text-white py-12">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-    <div>
-      <h3 class="font-bold">D10 IT Solutions</h3>
-      <p class="mt-2 text-sm">Secure, Reliable IT Support for home users and businesses.</p>
-    </div>
-
-    <div>
-      <h3 class="font-bold">Contact</h3>
-      <p>📞 +27 74 610 0441</p>
-      <p>✉️ kyle.n.wessels@gmail.com</p>
-      <p>📍 Durbanville, Cape Town</p>
-    </div>
-
-    <div>
-      <h3 class="font-bold">Services</h3>
-      <p>Home Office IT</p>
-      <p>Family Online Safety</p>
-      <p>Remote Support</p>
-    </div>
-  </div>
-
-  <p class="text-center text-sm mt-8">© 2023 D10 IT Solutions. All rights reserved.</p>
+<footer class="bg-d10black text-white py-10">
+  <p class="text-center text-sm">
+    © 2026 D10 IT Solutions • Secure • Reliable • Modern
+  </p>
 </footer>
 
-<!-- FLOATING WHATSAPP CTA -->
-<a href="https://wa.me/27746100441" class="fixed bottom-6 left-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-bold">WhatsApp</a>
-
-<!-- calendly booking -->
-
-
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d10itsolutions-appointments', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: false }); }</script>
-<!-- Calendly badge widget end -->
-
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/27746100441"
+   class="fixed bottom-6 left-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-bold hover:scale-105 transition">
+  WhatsApp
+</a>
 
 </body>
 </html>
