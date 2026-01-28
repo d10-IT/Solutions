@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag -->
+
+  <!-- Charset & Viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>D10 IT Solutions | Secure & Reliable IT Support in Cape Town</title>
+  <meta name="description"
+        content="Security-first IT support for homes and small businesses in Cape Town. Fast response, clear pricing, remote and onsite support." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="D10 IT Solutions | Secure & Reliable IT Support" />
+  <meta property="og:description"
+        content="Modern IT support for homes and small businesses. Fast response, security-first, and human support." />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/og-image.png" />
+
+  <!-- Google Search Console -->
+  <!-- Replace with your actual verification code -->
+  <meta name="google-site-verification" content="YOUR_REAL_CODE_HERE" />
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDRKDMXT3K"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,22 +33,6 @@
     gtag('js', new Date());
     gtag('config', 'G-FDRKDMXT3K');
   </script>
-
-<script>
-  docuet.querySelectorAll('[data-include]').forEach(el => {
-    fetch(el.getAttribute('data-include'))
-    .then(res => res.text())
-    .then(html => el.innerHTML = html)
-    .catch(err => console.error('Include failed:', err))
-  });
-  </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- SEO -->
-  <title>D10 IT Solutions | Secure, Reliable IT Support</title>
-  <meta name="description" content="Professional IT support for homes and businesses in Cape Town. Secure, reliable, security-first IT services." />
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -46,7 +54,44 @@
     }
   </script>
 
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- HTML Includes -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('[data-include]').forEach(el => {
+        fetch(el.getAttribute('data-include'))
+          .then(res => res.text())
+          .then(html => el.innerHTML = html)
+          .catch(err => console.error('Include failed:', err));
+      });
+    });
+  </script>
+<div data-include="/includes/head.html"></div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "D10 IT Solutions",
+  "image": "https://yourdomain.com/images/logo/d10ITSolutionslogo.png",
+  "url": "https://yourdomain.com/",
+  "telephone": "+27 74 610 0441",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cape Town",
+    "addressCountry": "ZA"
+  },
+  "areaServed": "South Africa",
+  "description": "Security-first IT support for homes and small businesses. Remote and onsite support.",
+  "sameAs": [
+    "https://www.linkedin.com/",
+    "https://github.com/"
+  ]
+}
+</script>
+
+
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -57,7 +102,7 @@
     <div class="flex items-center gap-4">
       <img src="images/logo/d10ITSolutionslogo.png" alt="D10 IT Solutions Logo" class="h-12" />
       <div>
-        <h1 class="text-lg font-bold">D10 IT Solutions</h1>
+        <p class="text-lg font-bold">D10 IT Solutions</p>
         <p class="text-xs text-d10gold">Secure • Reliable • Modern</p>
       </div>
     </div>
@@ -72,78 +117,20 @@
 </header>
 
 <!-- HERO -->
-<section class="bg-white">
-  <div class="max-w-5xl mx-auto px-6 py-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-d10blue">
-      Reliable IT Support — Without the Guesswork
-    </h2>
-
-    <p class="mt-5 text-lg max-w-3xl mx-auto">
-      Security-first IT support for homes and small businesses. Fast response, clear pricing, and support that actually fixes the root cause.
-    </p>
-
-    <p class="mt-3 text-sm text-gray-600">
-      Cape Town based • Remote & onsite support nationwide
-    </p>
-<!--
-    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-      <a href="#contact"
-         class="bg-d10gold text-black font-bold px-8 py-4 rounded-lg hover:scale-105 transition">
-        Book a Free Consultation
-      </a>
-
-      <a href="VineForce_Teams.html"
-         class="border border-d10blue text-d10blue font-semibold px-8 py-4 rounded-lg hover:bg-d10blue hover:text-white transition">
-        Explore VineForce
-      </a>
-    </div>
-  </div>
-  -->
-</section>
-
-<!-- VALUE DISCOVERY 
-<section class="py-20 bg-gray-100">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-2xl font-bold mb-12 text-d10blue">
-      Why Most IT Problems Keep Coming Back
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition">
-        <h3 class="font-bold mb-2">Reactive Fixes</h3>
-        <p class="text-sm">
-          Problems get patched, not solved — leading to repeat failures.
-        </p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition">
-        <h3 class="font-bold mb-2">No Visibility</h3>
-        <p class="text-sm">
-          Issues build quietly until they disrupt work.
-        </p>
-      </div>
-
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition">
-        <h3 class="font-bold mb-2">Poor Alignment</h3>
-        <p class="text-sm">
-          Technology isn’t aligned to how people actually work.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
 <section class="bg-slate-900 text-white py-20">
   <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- SINGLE H1 (SEO Critical) -->
     <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-      Modern IT Support for Home & Small Business
+      Secure, Reliable IT Support for Homes & Small Businesses
     </h1>
+
     <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
       Fast response. Clear pricing. Real humans. Remote or onsite IT support when you need it most.
     </p>
+
     <div class="mt-8 flex justify-center gap-4">
-      <a href="#book"
+      <a href="#contact"
          class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-semibold">
         Book a Free Consultation
       </a>
@@ -152,9 +139,9 @@
         View Services
       </a>
     </div>
+
   </div>
 </section>
-
 
 <!-- SERVICES -->
 <section id="services" class="py-20">
@@ -162,24 +149,24 @@
     <h2 class="text-2xl font-bold text-center mb-12">Our Services</h2>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+      <article class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
         <h3 class="font-bold text-lg mb-3">Home Office IT Health Check</h3>
         <ul class="space-y-2 text-sm">
           <li>• Performance optimisation</li>
           <li>• Security review</li>
           <li>• Wi-Fi stability & coverage</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+      <article class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
         <h3 class="font-bold text-lg mb-3">Business IT Support</h3>
         <ul class="space-y-2 text-sm">
           <li>• Secure networking</li>
           <li>• Endpoint management</li>
           <li>• ITIL-aligned support</li>
-          <li>• IT Consulting</li>
+          <li>• IT consulting</li>
         </ul>
-      </div>
+      </article>
     </div>
   </div>
 </section>
@@ -190,44 +177,38 @@
     <h2 class="text-2xl font-bold text-center mb-12">Packages</h2>
 
     <div class="grid md:grid-cols-4 gap-6">
-      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold transition">
         <h3 class="font-bold mb-2">Health Check</h3>
         <p class="text-sm mb-4">Fast clarity on your IT setup</p>
-        <a href="#contact" class="text-d10gold font-semibold">Get Started →</a>
       </div>
 
-      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold transition">
         <h3 class="font-bold mb-2">Family Safety</h3>
         <p class="text-sm mb-4">Secure digital homes</p>
-        <a href="#contact" class="text-d10gold font-semibold">Learn More →</a>
       </div>
 
-      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold transition">
         <h3 class="font-bold mb-2">Full Setup</h3>
         <p class="text-sm mb-4">Work-ready environments</p>
-        <a href="#contact" class="text-d10gold font-semibold">View Details →</a>
       </div>
 
-      <div class="p-6 border rounded-xl text-center hover:border-d10gold hover:-translate-y-1 transition">
+      <div class="p-6 border rounded-xl text-center hover:border-d10gold transition">
         <h3 class="font-bold mb-2">Custom Solutions</h3>
         <p class="text-sm mb-4">Designed around your needs</p>
-        <a href="#contact" class="text-d10gold font-semibold">Talk to Us →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT CTA -->
+<!-- CONTACT -->
 <section id="contact" class="py-20 bg-d10black text-white">
   <div class="max-w-5xl mx-auto px-6 text-center">
     <h2 class="text-2xl font-bold text-d10gold mb-4">
       Let’s Make IT Simple Again
     </h2>
-
     <p class="mb-8">
       Book a free consultation and get clarity without pressure.
     </p>
-
     <a href="mailto:kyle.n.wessels@gmail.com"
        class="inline-block bg-d10gold text-black font-bold px-8 py-4 rounded-lg hover:scale-105 transition">
       Get in Touch
@@ -242,7 +223,7 @@
   </p>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/27746100441"
    class="fixed bottom-6 left-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg font-bold hover:scale-105 transition">
   WhatsApp
