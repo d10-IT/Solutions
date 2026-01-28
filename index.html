@@ -10,6 +10,15 @@
     gtag('config', 'G-FDRKDMXT3K');
   </script>
 
+<script>
+  docuet.querySelectorAll('[data-include]').forEach(el => {
+    fetch(el.getAttribute('data-include'))
+    .then(res => res.text())
+    .then(html => el.innerHTML = html)
+    .catch(err => console.error('Include failed:', err))
+  });
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -66,18 +75,17 @@
 <section class="bg-white">
   <div class="max-w-5xl mx-auto px-6 py-20 text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-d10blue">
-      IT That Works — Without Stress
+      Reliable IT Support — Without the Guesswork
     </h2>
 
     <p class="mt-5 text-lg max-w-3xl mx-auto">
-      We help homes and businesses stay secure, productive, and supported —
-      without complexity, jargon, or constant firefighting.
+      Security-first IT support for homes and small businesses. Fast response, clear pricing, and support that actually fixes the root cause.
     </p>
 
     <p class="mt-3 text-sm text-gray-600">
-      Based in Cape Town • Supporting clients nationwide
+      Cape Town based • Remote & onsite support nationwide
     </p>
-
+<!--
     <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
       <a href="#contact"
          class="bg-d10gold text-black font-bold px-8 py-4 rounded-lg hover:scale-105 transition">
@@ -90,9 +98,10 @@
       </a>
     </div>
   </div>
+  -->
 </section>
 
-<!-- VALUE DISCOVERY -->
+<!-- VALUE DISCOVERY 
 <section class="py-20 bg-gray-100">
   <div class="max-w-6xl mx-auto px-6 text-center">
     <h2 class="text-2xl font-bold mb-12 text-d10blue">
@@ -123,6 +132,29 @@
     </div>
   </div>
 </section>
+-->
+
+<section class="bg-slate-900 text-white py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+      Modern IT Support for Home & Small Business
+    </h1>
+    <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
+      Fast response. Clear pricing. Real humans. Remote or onsite IT support when you need it most.
+    </p>
+    <div class="mt-8 flex justify-center gap-4">
+      <a href="#book"
+         class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-semibold">
+        Book a Free Consultation
+      </a>
+      <a href="#services"
+         class="border border-slate-500 px-6 py-3 rounded-lg">
+        View Services
+      </a>
+    </div>
+  </div>
+</section>
+
 
 <!-- SERVICES -->
 <section id="services" class="py-20">
@@ -134,8 +166,7 @@
         <h3 class="font-bold text-lg mb-3">Home Office IT Health Check</h3>
         <ul class="space-y-2 text-sm">
           <li>• Performance optimisation</li>
-          <li>• Security posture review</li>
-          <li>• Backup & recovery validation</li>
+          <li>• Security review</li>
           <li>• Wi-Fi stability & coverage</li>
         </ul>
       </div>
@@ -146,7 +177,7 @@
           <li>• Secure networking</li>
           <li>• Endpoint management</li>
           <li>• ITIL-aligned support</li>
-          <li>• Monitoring & optimisation</li>
+          <li>• IT Consulting</li>
         </ul>
       </div>
     </div>
