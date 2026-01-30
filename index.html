@@ -22,7 +22,6 @@
   <meta property="og:image" content="https://yourdomain.com/og-image.png" />
 
   <!-- Google Search Console -->
-  <!-- Replace with your actual verification code -->
   <meta name="google-site-verification" content="YOUR_REAL_CODE_HERE" />
 
   <!-- Google Analytics -->
@@ -57,40 +56,28 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- HTML Includes -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll('[data-include]').forEach(el => {
-        fetch(el.getAttribute('data-include'))
-          .then(res => res.text())
-          .then(html => el.innerHTML = html)
-          .catch(err => console.error('Include failed:', err));
-      });
-    });
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "D10 IT Solutions",
+    "image": "https://d10-it.github.io/Solutions/images/logo/d10ITSolutionslogo.png",
+    "url": "https://d10-it.github.io/Solutions/",
+    "telephone": "+27 74 610 0441",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cape Town",
+      "addressCountry": "ZA"
+    },
+    "areaServed": "South Africa",
+    "description": "Security-first IT support for homes and small businesses.",
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://github.com/"
+    ]
+  }
   </script>
-<!--<div data-include="/includes/head.html"></div>-->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "D10 IT Solutions",
-  "image": "https://d10-it.github.io/Solutions/images/logo/d10ITSolutionslogo.png",
-  "url": "https://d10-it.github.io/Solutions/",
-  "telephone": "+27 74 610 0441",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Cape Town",
-    "addressCountry": "ZA"
-  },
-  "areaServed": "South Africa",
-  "description": "Security-first IT support for homes and small businesses. Remote and onsite support.",
-  "sameAs": [
-    "https://www.linkedin.com/",
-    "https://github.com/"
-  ]
-}
-</script>
 
 </head>
 
@@ -99,6 +86,7 @@
 <!-- HEADER -->
 <header class="bg-d10black text-white sticky top-0 z-50 border-b border-gray-800">
   <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between">
+
     <div class="flex items-center gap-4">
       <img src="images/logo/d10ITSolutionslogo.png" alt="D10 IT Solutions Logo" class="h-12" />
       <div>
@@ -107,41 +95,58 @@
       </div>
     </div>
 
-    <nav class="flex gap-6 mt-4 md:mt-0 font-semibold">
-      <a href="#services" class="hover:text-d10gold">Services</a>
-      <a href="#packages" class="hover:text-d10gold">Packages</a>
-      <a href="VineForce_Teams.html" class="hover:text-d10gold">VineForce</a>
-      <a href="#contact" class="hover:text-d10gold">Contact</a>
-    </nav>
+    <div class="flex items-center gap-6 mt-4 md:mt-0">
+      <nav class="flex gap-6 font-semibold">
+        <a href="#services" class="hover:text-d10gold transition">Services</a>
+        <a href="#packages" class="hover:text-d10gold transition">Packages</a>
+        <a href="VineForce_Teams.html" class="hover:text-d10gold transition">VineForce</a>
+        <a href="#contact" class="hover:text-d10gold transition">Contact</a>
+      </nav>
+
+      <!-- Header Social (Minimal) -->
+      <a
+        href="https://www.linkedin.com/company/YOUR_COMPANY"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        class="ml-4 p-2 rounded-lg text-gray-400
+               transition-all duration-200 ease-out
+               hover:text-[#0A66C2]
+               hover:bg-gray-800"
+      >
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zM7.119 20.452H3.553V9h3.566v11.452z"/>
+        </svg>
+      </a>
+    </div>
+
   </div>
 </header>
 
 <!-- HERO -->
 <section class="bg-slate-900 text-white py-20">
   <div class="max-w-6xl mx-auto px-6 text-center">
-
-    <!-- SINGLE H1 (SEO Critical) -->
     <h1 class="text-4xl md:text-5xl font-bold leading-tight">
       Secure, Reliable IT Support for Homes & Small Businesses
     </h1>
-
     <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">
-      Fast response. Clear pricing. Real humans. Remote or onsite IT support when you need it most.
+      Fast response. Clear pricing. Real humans. Remote or onsite IT support.
     </p>
-
     <div class="mt-8 flex justify-center gap-4">
       <a href="#contact"
-         class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-semibold">
+         class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-semibold transition">
         Book a Free Consultation
       </a>
       <a href="#services"
-         class="border border-slate-500 px-6 py-3 rounded-lg">
+         class="border border-slate-500 px-6 py-3 rounded-lg transition hover:bg-slate-800">
         View Services
       </a>
     </div>
-
   </div>
 </section>
+
+<!-- SERVICES / PACKAGES / CONTACT -->
+<!-- (unchanged for consistency) -->
 
 <!-- SERVICES -->
 <section id="services" class="py-20">
@@ -216,19 +221,16 @@
   </div>
 </section>
 
-<!-- Social Embed Wrapper -->
+<!-- SOCIAL EMBED -->
 <section class="max-w-3xl mx-auto my-12 px-4">
   <div class="rounded-2xl border border-gray-200 bg-white shadow-sm p-4">
-
-    <!-- Optional header -->
     <div class="mb-4 flex items-center gap-2 text-sm text-gray-600">
-      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zM7.119 20.452H3.553V9h3.566v11.452z"/>
+      <svg class="w-4 h-4 text-[#0A66C2]" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zM7.119 20.452H3.553V9h3.566v11.452z"/>
       </svg>
-      <span>Latest from Social Media</span>
+      <span>Latest from LinkedIn</span>
     </div>
 
-    <!-- Embed goes here -->
     <div class="overflow-hidden rounded-xl">
       <iframe
         src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7422889021854343168"
@@ -239,20 +241,41 @@
         title="Embedded LinkedIn post">
       </iframe>
     </div>
-
   </div>
 </section>
 
-
-
-
-
 <!-- FOOTER -->
 <footer class="bg-d10black text-white py-10">
-  <p class="text-center text-sm">
-    © 2024 D10 IT Solutions • Secure • Reliable • Modern
-  </p>
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+
+    <p class="text-sm text-gray-400">
+      © <span id="year"></span> D10 IT Solutions • Secure • Reliable • Modern
+    </p>
+
+    <!-- Footer Social (Prominent) -->
+    <a
+      href="https://www.linkedin.com/company/YOUR_COMPANY"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      class="inline-flex items-center justify-center rounded-xl p-2
+             text-gray-400
+             transition-all duration-200 ease-out
+             hover:text-[#0A66C2]
+             hover:-translate-y-0.5
+             hover:bg-gray-800"
+    >
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zM7.119 20.452H3.553V9h3.566v11.452z"/>
+      </svg>
+    </a>
+
+  </div>
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 <!-- WHATSAPP -->
 <a href="https://wa.me/27746100441"
